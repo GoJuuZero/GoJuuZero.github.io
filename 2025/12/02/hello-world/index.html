@@ -223,6 +223,11 @@
           
   <div class="mt-3">
     
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Kitashio Yume
+      </span>
+    
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
@@ -255,6 +260,15 @@
     
 
     
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+
+      
     
   </div>
 
@@ -380,6 +394,33 @@
             </div>
 
             
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#gitalk-container', function() {
+      Fluid.utils.createCssLink('/css/gitalk.css')
+      Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js', function() {
+        var options = Object.assign(
+          {"clientID":"Ov23li0PKv4mjDtxYpX1","clientSecret":"46dc64fd67ff4aa7bf89ab3c16d5976a835e6c86","repo":"GoJuuZero.github.io","owner":"GoJuuZero","admin":["GoJuuZero"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":true,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {
+            id: '1431626d9d45bf8fa2c5c38c21b429ef'
+          }
+        )
+        var gitalk = new Gitalk(options);
+        gitalk.render('gitalk-container');
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
           </article>
         </div>
       </div>
